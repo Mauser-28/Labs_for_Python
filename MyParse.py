@@ -1,5 +1,8 @@
 import requests 
 
+#чтобы создать папку с библиотеками я использую внутри папки с проектом команду <<pip freeze > requirements.txt>>
+#чтобы потом ей воспользоваться нужно проописать команду <<pip install -r requirements.txt>>
+
 def get_weather (cityName: str, api: str):
     variationLimit:int = 4 #int(input("enter limit of variations "))
 
@@ -75,6 +78,6 @@ def get_weather (cityName: str, api: str):
 
 if __name__ == "__main__":
     print("\nparser for site openweathermap.org\n")
-    get_weather(input("Введите название города "), input("Введите api-ключ ")) #d4f0ee5a4b6fc13984be0d3bee874de8
+    get_weather(input("Введите название города "), input("Введите api-ключ ")) 
 
     
